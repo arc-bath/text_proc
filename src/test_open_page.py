@@ -1,6 +1,6 @@
 import web_text as wt
 
-def test_licence():
+def test_rjg20():
     link = "https://people.bath.ac.uk/rjg20/index.html"
     filename = "../data/rjg20-index.html"
 
@@ -9,3 +9,5 @@ def test_licence():
 
     link_str = wt.open_page(link)
     link_lines = link_str.splitlines()
+
+    assert link_lines == expect
