@@ -35,3 +35,55 @@ def test_count_hamlet():
     text = wt.open_page(link)
 
     assert wt.count_words(text) == expect
+
+def test_occs_macbeth1():
+    '''
+    Test count occs in the Scottish play
+    '''
+    link = "http://www.gutenberg.org/cache/epub/2264/pg2264.txt"
+
+    words = [ "Macbeth" ]
+    expect = [ 70 ]
+
+    text = wt.open_page(link)
+
+    assert wt.count_occs(text, words) == expect
+
+def test_occs_macbeth2():
+    '''
+    Test count occs in the Scottish play
+    '''
+    link = "http://www.gutenberg.org/cache/epub/2264/pg2264.txt"
+
+    words = [ "Macduff" ]
+    expect = [ 28 ]
+
+    text = wt.open_page(link)
+
+    assert wt.count_occs(text, words) == expect
+
+def test_occs_macbeth3():
+    '''
+    Test count occs in the Scottish play
+    '''
+    link = "http://www.gutenberg.org/cache/epub/2264/pg2264.txt"
+
+    words = [ "Macbeth", "Macduff" ]
+    expect = [ 70, 28 ]
+
+    text = wt.open_page(link)
+
+    assert wt.count_occs(text, words) == expect
+
+def test_occs_macbeth4():
+    '''
+    Test count occs in the Scottish play
+    '''
+    link = "http://www.gutenberg.org/cache/epub/2264/pg2264.txt"
+
+    words = [ "Macb.", "Macd.", "Lady." ]
+    expect = [ 137, 58, 41 ]
+
+    text = wt.open_page(link)
+
+    assert wt.count_occs(text, words) == expect
