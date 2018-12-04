@@ -1,4 +1,4 @@
-import web_test as wt
+import web_text as wt
 
 def test_licence():
     link = "https://creativecommons.org/licenses/by/4.0/legalcode.txt"
