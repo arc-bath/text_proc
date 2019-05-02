@@ -1,5 +1,7 @@
 # Text Processing  
 
+[![Azure Notebooks](https://notebooks.azure.com/launch.png)](https://notebooks.azure.com/import/gh/arc-bath/text_proc)
+
 (C) James Grant (r.j.grant@bath.ac.uk)
 
 The repository contains exercises based around processing text from a file sourced from the web and designing some functions to mine it for data:
